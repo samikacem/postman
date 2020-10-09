@@ -7,6 +7,7 @@
   },
   "author": "sami kacem",
   "dependencies": {
-    "newman": "^5.2.0"
+    "newman": "^5.2.0",
+    "newman-reporter-htmlextra": "1.19.2"
   }
 }
