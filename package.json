@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "postman test jenkins",
   "scripts": {
-    "api-tests": "newman run Sami.postman_collection.json -e Sami.postman_environment.json --reporters cli"
+    "api-tests": "newman run Sami.postman_collection.json -e Sami.postman_environment.json --reporters cli,html"
   },
   "author": "sami kacem",
   "dependencies": {
