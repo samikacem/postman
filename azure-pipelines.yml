@@ -11,4 +11,11 @@ pool:
 
 steps:
 - script: npm install
+  displayName: install npm
 - script: npm run api-tests
+  displayName: run postman tests
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
+    testRunTitle: 'publish'
