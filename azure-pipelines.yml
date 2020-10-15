@@ -10,6 +10,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- script: npm install
+  displayName: install npm
 - script: npm run api-tests
   displayName: run postman tests
 - task: PublishTestResults@2
